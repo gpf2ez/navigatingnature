@@ -1,8 +1,9 @@
 {
   "name": "navigating-nature",
-  "private": true,
+  "private": false,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://gpf2ez.github.io/navigating-nature",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -20,6 +21,6 @@
     "@vitejs/plugin-react": "^4.2.1",
     "gh-pages": "^6.1.1",
     "typescript": "^5.2.2",
-    "vite": "^7.2.4"
+    "vite": "^5.2.0"
   }
 }
