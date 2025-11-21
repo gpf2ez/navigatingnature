@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navigating Nature</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            colors: {
+              primary: "#3A5A40",
+              "background-light": "#FFFFFF",
+              "paper-light": "#F0EBE3",
+              "paper-dark": "#333333",
+              "accent-light": "#A69895",
+              "accent-dark": "#5C5250",
+              "card-light": "#EAE5DC",
+              "card-dark": "#2A2A2A",
+              tape: "#E0DACE",
+            },
+            fontFamily: {
+              display: ["Special Elite", "cursive"],
+              sans: ["Verdana", "sans-serif"],
+            },
+            backgroundImage: {
+              "torn-paper":
+                "url('https://lh3.googleusercontent.com/aida-public/AB6AXuB5xKaPrZpSYN4mnkyKxjerpBFrd9D1n_GrOAGK1Liki16eAigWB4fcY81hnCKbAhyKLPDMOTFepO-oCZY7yTX8KCnluOeS_JwUfXp0xJ_aABxTqh5FoC2FOE3ln7zbhOMj_my8t0_srSXKnp2jD-RaHIhp8CsOfkX1g0ihpIYzzyJMnq57-F8gsFMKaykeneNdaaODh6trQJqpvGXaFn9DlnX4dP3LDbgwYFAYM5wDC4kxAuQG4jP8qXpZKyLuOuGUPzSPU4ag-4M')",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      /* Utility for torn paper edge */
+      .torn-edge-top {
+        position: relative;
+      }
+      .torn-edge-top::before {
+        content: "";
+        position: absolute;
+        top: -20px;
+        left: 0;
+        right: 0;
+        height: 20px;
+        background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB5xKaPrZpSYN4mnkyKxjerpBFrd9D1n_GrOAGK1Liki16eAigWB4fcY81hnCKbAhyKLPDMOTFepO-oCZY7yTX8KCnluOeS_JwUfXp0xJ_aABxTqh5FoC2FOE3ln7zbhOMj_my8t0_srSXKnp2jD-RaHIhp8CsOfkX1g0ihpIYzzyJMnq57-F8gsFMKaykeneNdaaODh6trQJqpvGXaFn9DlnX4dP3LDbgwYFAYM5wDC4kxAuQG4jP8qXpZKyLuOuGUPzSPU4ag-4M");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        z-index: 10;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-white font-sans text-gray-800">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
