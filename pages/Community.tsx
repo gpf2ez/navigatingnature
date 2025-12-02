@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSite } from '../services/SiteContext';
 import { Tape, Polaroid, NatureButton } from '../components/Scrapbook';
-import { Camera, PenTool, Binoculars, CheckCircle, Upload } from 'lucide-react';
+import { Camera, PenTool, Eye, CheckCircle, Upload } from 'lucide-react';
 import { UserSubmission } from '../types';
 
 const Community: React.FC = () => {
@@ -93,7 +93,7 @@ const Community: React.FC = () => {
                           
                           <div className="flex items-center gap-2 mb-2">
                              {sub.type === 'photo' && <Camera size={16} className="text-nature-accent" />}
-                             {sub.type === 'sighting' && <Binoculars size={16} className="text-nature-primary" />}
+                             {sub.type === 'sighting' && <Eye size={16} className="text-nature-primary" />}
                              {sub.type === 'review' && <PenTool size={16} className="text-nature-brown" />}
                              <span className="text-xs font-bold uppercase text-gray-500 tracking-wider">{sub.type}</span>
                           </div>
